@@ -1,17 +1,20 @@
-import Link from "next/link";
+import { submitForm } from "./actions";
 
 export default function Home() {
   return (
     <main>
-      <h1>Next.js Learning Journey</h1>
+      <h1>Server Action Demo</h1>
 
-      <p>This is my first custom Next.js page.</p>
+      <form action={submitForm}>
+        <input
+          name="name"
+          placeholder="Enter name"
+        />
 
-      <br />
-
-      <Link href="/about">
-        Go To About Page
-      </Link>
+        <button type="submit">
+          Submit
+        </button>
+      </form>
     </main>
   );
 }
