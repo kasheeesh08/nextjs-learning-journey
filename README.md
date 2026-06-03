@@ -1,36 +1,207 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Next.js Learning Journey
 
-## Getting Started
+A structured repository documenting my journey of learning modern Next.js fundamentals using the App Router architecture.
 
-First, run the development server:
+This repository contains practical examples and mini implementations covering routing, layouts, server components, client components, data fetching, loading states, error handling, and server actions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🎯 Goal
+
+Build a strong Next.js foundation before moving to production-grade full-stack applications and AI SaaS platforms.
+
+---
+
+## 📚 Topics Covered
+
+### App Router
+
+- page.tsx
+- layout.tsx
+- Nested Routes
+- Dynamic Routes
+
+### Navigation
+
+- Link Component
+- Client-side Navigation
+
+### Components
+
+- Server Components
+- Client Components
+- Component Composition
+
+### Data Fetching
+
+- Async Server Components
+- Fetch API in Next.js
+
+### UI States
+
+- loading.tsx
+- error.tsx
+
+### Server Actions
+
+- Form Actions
+- Server-side Functions
+- FormData Handling
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+
+---
+
+## 📂 Project Structure
+
+```txt
+app
+│
+├── page.tsx
+├── layout.tsx
+│
+├── about
+│   └── page.tsx
+│
+├── contact
+│   └── page.tsx
+│
+├── posts
+│   ├── page.tsx
+│   ├── loading.tsx
+│   └── error.tsx
+│
+├── movies
+│   └── [id]
+│       └── page.tsx
+│
+├── profile
+│   ├── page.tsx
+│   └── ProfileCounter.tsx
+│
+└── actions.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧠 Concepts Learned
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Routing
 
-## Learn More
+```txt
+Folder = Route
+```
 
-To learn more about Next.js, take a look at the following resources:
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```txt
+app/about/page.tsx
+↓
+/about
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Dynamic Routing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```txt
+app/movies/[id]/page.tsx
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Example:
+
+```txt
+/movies/123
+↓
+id = 123
+```
+
+---
+
+### Server Components
+
+Default Next.js behavior.
+
+Used for:
+
+- Data Fetching
+- Static Content
+- SEO
+
+---
+
+### Client Components
+
+```tsx
+"use client"
+```
+
+Used for:
+
+- useState
+- useEffect
+- Event Handlers
+- Browser APIs
+
+---
+
+### Loading UI
+
+```txt
+loading.tsx
+```
+
+Automatic loading states.
+
+---
+
+### Error UI
+
+```txt
+error.tsx
+```
+
+Automatic error handling.
+
+---
+
+### Server Actions
+
+```tsx
+"use server"
+```
+
+Server-side form processing without custom API routes.
+
+---
+
+## 🚀 Next Step
+
+After completing this repository:
+
+### 🤖 AI SaaS Platform
+
+A production-grade full-stack application built using:
+
+- Next.js
+- Appwrite
+- AI APIs
+- Authentication
+- File Uploads
+- Modern SaaS Architecture
+
+---
+
+## 👨‍💻 Author
+
+Kashish
+
+GitHub:
+https://github.com/kasheeesh08
